@@ -1,22 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Page</title>
   <style>
+    :root {
+      --primary-color: #4f46e5;
+      --bg-color: #f9fafb;
+      --text-color: #1f2937;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       padding: 2rem;
-      background-color: #f5f5f5;
-      color: #333;
+    }
+
+    main {
+      background: #fff;
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #6b7280;
     }
   </style>
 </head>
 <body>
-
-  <h1>Hello, world!</h1>
-  <p>This is a basic HTML page.</p>
-
+  <main>
+    <h1>Hello, world!</h1>
+    <p>This is a clean and modern HTML starter template.</p>
+    <footer>&copy; 2025 Your Name</footer>
+  </main>
 </body>
 </html>
